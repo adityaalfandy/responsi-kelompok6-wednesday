@@ -7,32 +7,33 @@
 <body>
 
 <center>
+
     <table border="1" width="300" cellpadding="15">
         <tr>
             <td align="center">
 
-                <table border="1" width="70" height="70">
-                    <tr><td></td></tr>
-                </table>
+                <img src="gambar.png" width="80" height="80" alt="gambar">
 
-                <br>
+                <br><br>
 
-                <!-- Form -->
                 <form method="post" action="login.php">
 
-                    <p>Username</p>
-                    <input type="text" name="username">
+                    Username<br>
+                    <input type="text" name="username"><br><br>
 
-                    <p>Password</p>
-                    <input type="password" name="password">
+                    Password<br>
+                    <input type="password" name="password"><br><br>
 
-                    <br><br>
-                    <button type="submit">Button Sign In</button>
+                    <button type="submit">Button Sign In</button><br><br>
+
+                    <a href="register.php">Belum Punya Akun?</a>
 
                 </form>
+
             </td>
         </tr>
     </table>
+
 </center>
 
 </body>
