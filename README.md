@@ -14,7 +14,7 @@
     <td align="center" width="33%">
       <b>🎨 UI/UX Design</b><br>
       <sub>Crafting Immersive Gothic Experience</sub><br><br>
-      <kbd>Adjeng Mutiara Dewi/kbd><br>
+      <kbd>Adjeng Mutiara Dewi</kbd><br>
     </td>
     <td align="center" width="33%">
       <b>💻 Frontend Development</b><br>
