@@ -44,6 +44,7 @@
 - [Struktur Database](#-struktur-database)
 - [Teknologi](#-teknologi)
 - [FAQ](#-faq)
+- [Link Website](#-link-website)
 
 ---
 
@@ -680,3 +681,7 @@ Namun untuk quiz gameplay, direkomendasikan gunakan device dengan layar ≥7 inc
 </details>
 
 ---
+
+### link-website
+
+Website dapat diakses melalui : http://wednesday-quiz.beevolution24.my.id/
