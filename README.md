@@ -614,42 +614,6 @@ CREATE TABLE quiz_results (
 
 ---
 
-
-### 🔒 Best Practices Implemented
-
-```php
-// ✅ GOOD: Prepared Statement
-$stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
-$stmt->bind_param('s', $username);
-
-// ❌ BAD: Direct Query (Vulnerable)
-$query = "SELECT * FROM users WHERE username = '$username'";
-
-// ✅ GOOD: Password Hashing
-$hashed = password_hash($password, PASSWORD_DEFAULT);
-
-// ❌ BAD: Plain Text Password
-$password = $_POST['password']; // Stored as-is
-
-// ✅ GOOD: XSS Prevention
-echo htmlspecialchars($user_input, ENT_QUOTES, 'UTF-8');
-
-// ❌ BAD: Direct Output
-echo $_POST['comment']; // Vulnerable to XSS
-```
-
-### 🚨 Security Recommendations
-
-1. **Change Default Credentials** - Ubah password admin default
-2. **Enable HTTPS** - Gunakan SSL certificate untuk production
-3. **Regular Updates** - Keep PHP dan MySQL up-to-date
-4. **Backup Database** - Automated daily backups
-5. **Rate Limiting** - Implement untuk prevent brute force
-6. **Error Logging** - Log security events tanpa expose ke user
-7. **Input Validation** - Server-side validation untuk semua input
-
----
-
 ## ❓ FAQ
 
 <details>
