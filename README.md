@@ -43,7 +43,6 @@
 - [Alur Demo](#-alur-demo-walkthrough)
 - [Struktur Database](#-struktur-database)
 - [Teknologi](#-teknologi)
-- [Keamanan](#-keamanan)
 - [FAQ](#-faq)
 
 ---
@@ -615,23 +614,6 @@ CREATE TABLE quiz_results (
 
 ---
 
-## 🔐 Keamanan
-
-### 🛡️ Security Features
-
-- **Password Hashing:** `password_hash()` dengan bcrypt
-- **SQL Injection Prevention:** Prepared statements dengan mysqli
-- **XSS Protection:** `htmlspecialchars()` pada output
-- **CSRF Protection:** Token validation (jika diimplementasikan)
-- **Session Security:** 
-  - Regenerate session ID on login
-  - HTTP-only cookies
-  - Secure session storage
-- **File Upload Security:**
-  - MIME type validation
-  - File size limit (2MB)
-  - Whitelist extension (.jpg, .png, .gif)
-  - Rename uploaded files
 
 ### 🔒 Best Practices Implemented
 
