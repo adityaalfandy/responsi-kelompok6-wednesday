@@ -7,6 +7,29 @@
 
 [🚀 Demo](#-akses-akun-demo) • [✨ Fitur](#-fitur-unggulan) • [📖 Dokumentasi](#-dokumentasi-lengkap) • [🛠️ Teknologi](#-teknologi)
 
+## 👥 Development Team
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <b>🎨 UI/UX Design</b><br>
+      <sub>Crafting Immersive Gothic Experience</sub><br><br>
+      <kbd>Adjeng Mutiara Dewi/kbd><br>
+    </td>
+    <td align="center" width="33%">
+      <b>💻 Frontend Development</b><br>
+      <sub>Building Interactive Interfaces</sub><br><br>
+      <kbd>Aditya Alfandy</kbd><br>
+    </td>
+    <td align="center" width="34%">
+      <b>⚙️ Backend Development</b><br>
+      <sub>Architecting Robust Systems</sub><br><br>
+      <kbd>Zahwa Nafiza Azzahra</kbd><br>
+    </td>
+  </tr>
+</table>
+
+
 </div>
 
 ---
@@ -405,52 +428,6 @@ Berikut adalah **step-by-step guide** untuk demo yang optimal:
    
 10. 🚪 Logout
 ```
-
-### 💡 Demo Tips & Talking Points
-
-**⏱️ Durasi Optimal:** 15-17 menit untuk full demo
-
-**🎯 Key Highlights (yang HARUS ditunjukkan):**
-
-1. **Atmospheric UI** - Gothic theme, custom fonts, smooth animations
-2. **Music Integration** - Toggle ON/OFF, persistent state
-3. **Timer Mechanic** - Countdown dengan visual progress
-4. **Smart Scoring** - Base points + time bonus formula
-5. **CRUD Complete** - Create, read, update, delete soal
-6. **Role-Based Access** - Admin vs User permissions
-7. **Leaderboard Podium** - Visual ranking dengan badges
-8. **Profile System** - Avatar upload & data editing
-
-**🗣️ Script Presentation:**
-
-> "Selamat datang di **Wednesday Quiz**, aplikasi kuis interaktif dengan tema Wednesday. Aplikasi ini dibangun menggunakan **PHP Native** untuk demonstrasi CRUD lengkap dan sistem multi-role."
->
-> "Mari kita mulai dari sisi **Admin** untuk melihat backend management..."
-> *(Tunjukkan dashboard, CRUD soal, user management)*
->
-> "Sekarang kita coba **experience sebagai pemain**..."
-> *(Register, main kuis, lihat leaderboard, update profile)*
->
-> "Aplikasi ini menunjukkan implementasi **full-stack** dengan PHP Native: autentikasi, database CRUD, file upload, session management, dan responsive UI tanpa framework CSS."
-
-**🎨 Visual Elements to Emphasize:**
-
-- ✨ Smooth page transitions
-- 🎵 Background music toggle
-- ⏱️ Real-time countdown timer
-- 🎨 Color feedback (green/red answers)
-- 🏆 Podium design for top 3
-- 👤 Avatar upload & preview
-- 📊 Admin statistics cards
-
-**⚠️ Demo Pitfalls to Avoid:**
-
-- ❌ Jangan lupa logout sebelum switch role
-- ❌ Jangan skip register (langsung login user lain)
-- ❌ Jangan timeout semua soal (tunjukkan variasi)
-- ❌ Jangan edit/delete semua soal (rusak demo selanjutnya)
-- ❌ Jangan lupa highlight scoring formula
-
 ---
 
 ## 🗄️ Struktur Database
@@ -730,20 +707,6 @@ Ini adalah browser policy, bukan bug aplikasi.
 
 </details>
 
-<details>
-<summary><b>🏆 Bagaimana cara reset semua skor user?</b></summary>
-
-```sql
--- Reset total_score semua user
-UPDATE users SET total_score = 0, quiz_completed = 0;
-
--- Hapus semua history quiz
-TRUNCATE TABLE quiz_results;
-```
-
-⚠️ **Warning:** Ini akan menghapus semua data permainan!
-
-</details>
 
 <details>
 <summary><b>📊 Berapa banyak soal yang direkomendasikan untuk satu quiz?</b></summary>
@@ -755,19 +718,6 @@ TRUNCATE TABLE quiz_results;
 - **Terlalu banyak** (>30): User fatigue
 
 Durasi ideal: 5-10 menit per session
-
-</details>
-
-<details>
-<summary><b>🔄 Apakah bisa import soal dari Excel/CSV?</b></summary>
-
-Fitur ini belum tersedia di versi current. Namun bisa diimplementasikan dengan:
-
-1. Install PHPExcel atau PhpSpreadsheet
-2. Buat form upload Excel
-3. Parse data dan insert ke database
-
-Sample code tersedia di branch `feature/excel-import`
 
 </details>
 
@@ -784,43 +734,3 @@ Namun untuk quiz gameplay, direkomendasikan gunakan device dengan layar ≥7 inc
 </details>
 
 ---
-
-## 📚 Changelog
-
-### Version 1.0.0 (December 2024)
-- ✨ Initial release
-- ✅ Complete user authentication system
-- ✅ Quiz gameplay with timer
-- ✅ Admin panel with CRUD
-- ✅ Leaderboard with podium
-- ✅ Profile management with avatar upload
-- ✅ Background music system
-- ✅ Responsive design
-
-### Planned Updates (v1.1.0)
-- 🔄 Quiz categories
-- 📊 Advanced analytics
-- 🏆 Achievement system
-- 🌐 Multi-language support
-- 📱 PWA (Progressive Web App)
-
----
-
-## 🙏 Acknowledgments
-
-- **Inspiration:** Netflix's Wednesday series
-- **Fonts:** Google Fonts & Custom typography
-- **Icons:** Custom SVG designs
-- **Testing:** Beta testers & contributors
-
----
-
-<div align="center">
-
-**🕸️ Wednesday Quiz - Where Gothic Meets Gaming 🕸️**
-
-*Dibuat untuk tujuan demonstrasi dan pembelajaran pengembangan web PHP Native*
-
-**Last Updated:** December 2024 | **Version:** 1.0.0
-
-</div>
